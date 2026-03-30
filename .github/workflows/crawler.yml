@@ -18,8 +18,8 @@ jobs:
           python-version: '3.10'
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Run crawler
-        run: python crawler.py
+      - name: Run TrendRadar
+        run: python -m src.main
         env:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
